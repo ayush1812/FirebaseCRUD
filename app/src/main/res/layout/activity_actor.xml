@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aayush.firebasecrud.ActorAct">
+
+    <TextView
+        android:id="@+id/tvactorname"
+        android:text="actorname"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/txtmoviename"
+        android:layout_width="match_parent"
+        android:hint="Enter Movie Name"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+        android:id="@+id/ratingmovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="2" />
+    <Button
+        android:id="@+id/btnaddmovie"
+        android:text="Add Movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:dividerHeight="2sp"
+        android:divider="@color/colorAccent"
+        android:id="@+id/lvmovie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
